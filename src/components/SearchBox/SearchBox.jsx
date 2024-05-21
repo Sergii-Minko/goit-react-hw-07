@@ -1,6 +1,5 @@
-import { setFilter } from "../../redux/filtersSlice";
-import { selectFilter } from "../../redux/selectors";
 import { useDispatch, useSelector } from "react-redux";
+import { setFilter, selectFilter } from "../../redux/filtersSlice";
 
 // import { nanoid } from "@reduxjs/toolkit";
 
@@ -19,8 +18,7 @@ const SearchBox = () => {
         type="text"
         value={filter}
         onChange={handleChange}
-        // onChange={(e) => onFilter(e.target.value)}
-        // id={filterInputId}
+        placeholder="Enter name"
       />
     </div>
   );
